@@ -464,67 +464,72 @@
                 </div>
               <div class="contact-form card">     
                     <h3>Get a Free Quote</h3>
-                    <!-- Web3Forms form with your access key -->
-                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                        <!-- Required Web3Forms parameters -->
-                        <input type="hidden" name="access_key" value="9efa573c-458d-4a54-8baf-f5b2a8ff1b04">
-                        <input type="hidden" name="subject" value="New Quote Request from Your Website">
-                        <input type="hidden" name="from_name" value="Your Website Contact Form">
-                        <input type="checkbox" name="botcheck" id="" style="display: none;">
-                        
-                        <!-- Add redirect after successful submission -->
-                        <input type="hidden" name="redirect" value="true">
-                        <input type="hidden" name="redirect_url" value="#thankYouMessage">
-                        
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Service Needed</label>
-                            <select id="service" name="service">
-                                <option value="">Select a service</option>
-                                <option value="web-development">Web Development</option>
-                                <option value="python">Python Development</option>
-                                <option value="database">Database Solution</option>
-                                <option value="api">API Development</option>
-                                <option value="maintenance">Application Maintenance</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="budget">Project Budget (ZA)</label>
-                            <select id="budget" name="budget">
-                                <option value="">Select budget range</option>
-                                <option value="2,000-2,500">R2000 - R2,500</option>
-                                <option value="3,000-3,500">R3,000 - R3,500</option>
-                                <option value="4,000-4,500">R4000 - R4,500</option>
-                                <option value="5,000+">R5,000+</option>
-                                <option value="unsure">Not sure yet</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Project Details</label>
-                            <textarea id="message" name="message" required placeholder="Please describe your project requirements..."></textarea>
-                        </div>
-                        <button type="submit" class="btn" id="btn">Send Request</button>
-                    </form>
-                    
-                    <div id="notification" class="notification"></div>
-                    
-                    <div id="thankYouMessage" class="thank-you-message">
-                        <div class="success-checkmark">✓</div>
-                        <h3>Thank You For Your Inquiry!</h3>
-                        <p>We've received your message and will get back to you within 24 hours with a quote.</p>
-                        <p>A confirmation email has been sent to your inbox.</p>
-                    </div>
+                    <div class="container">
+        <div class="header">
+            <h1>Get In Touch</h1>
+            <p>Let's discuss how we can bring your project to life</p>
+        </div>
+        
+        <div class="form-container">
+            <!-- Web3Forms form with your access key -->
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <!-- Required Web3Forms parameters -->
+                <input type="hidden" name="access_key" value="9efa573c-458d-4a54-8baf-f5b2a8ff1b04">
+                <input type="hidden" name="subject" value="New Quote Request from Your Website">
+                <input type="hidden" name="from_name" value="Your Website Contact Form">
+                <input type="checkbox" name="botcheck" id="" style="display: none;">
+                
+                <!-- REMOVED THE REDIRECT PARAMETERS -->
+                
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Needed</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="python">Python Development</option>
+                        <option value="database">Database Solution</option>
+                        <option value="api">API Development</option>
+                        <option value="maintenance">Application Maintenance</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Project Budget (ZA)</label>
+                    <select id="budget" name="budget">
+                        <option value="">Select budget range</option>
+                        <option value="2,000-2,500">R2000 - R2,500</option>
+                        <option value="3,000-3,500">R3,000 - R3,500</option>
+                        <option value="4,000-4,500">R4000 - R4,500</option>
+                        <option value="5,000+">R5,000+</option>
+                        <option value="unsure">Not sure yet</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Project Details</label>
+                    <textarea id="message" name="message" required placeholder="Please describe your project requirements..."></textarea>
+                </div>
+                <button type="submit" class="btn" id="submitBtn">Send Request</button>
+            </form>
+            
+            <div id="notification" class="notification"></div>
+            
+            <div id="thankYouMessage" class="thank-you-message">
+                <div class="success-checkmark">✓</div>
+                <h3>Thank You For Your Inquiry!</h3>
+                <p>We've received your message and will get back to you within 24 hours with a quote.</p>
+                <p>A confirmation email has been sent to your inbox.</p>
             </div>
         </div>
+    </div>
+               
             
             
     </section>
@@ -576,6 +581,6 @@
         </div>
     </footer>
     <script src="script/script.js"></script>
-   
+   <script src="message.js"></script>
 </body>
 </html>
