@@ -241,7 +241,7 @@
 }
 
 .hero-btns .btn:hover {
-  background: #2176b5;
+  background: #c3e6cb;
 }
 
 .hero-btns .btn-outline {
@@ -748,6 +748,9 @@
             grid-template-columns: 1fr 1fr;
             gap: 50px;
         }
+       
+
+
 
         .contact-info {
             display: flex;
