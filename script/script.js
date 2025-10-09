@@ -210,3 +210,19 @@
                 // External links (like those in portfolio) will work normally
             });
         });
+
+       const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+  const links = document.querySelectorAll('#nav-links a');
+
+  // Open/close when the toggle (hamburger) is clicked
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+
+  // Close the menu when any nav link is clicked
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+    });
+  });

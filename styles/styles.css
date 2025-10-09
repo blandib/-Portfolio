@@ -96,65 +96,6 @@
             color: var(--primary);
             transition: var(--transition);
         }
-        
-        /*.hero-btns {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background: var(--primary);
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: var(--transition);
-            border: 2px solid var(--primary);
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            background: transparent;
-            color: var(--primary);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: var(--primary);
-        }
-
-        .btn-outline:hover {
-            background: var(--primary);
-            color: white;
-        }*/
-        /* Base layout */
-/*.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: #f8f9fa;
-  text-align: center;
-  padding: 60px 20px;
-  position: relative;
-  z-index: 1;
-}
-
-.hero-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  line-height: 1.6;
-}*/
 .hero {
             min-height: 100vh;
             display: flex;
@@ -518,93 +459,6 @@
         .language-item h3 {
             font-size: 1.5rem;
         }
-
-        /* Portfolio Section 
-        .portfolio-filters {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-        }
-
-        .filter-btn {
-            padding: 8px 20px;
-            margin: 5px;
-            background: var(--bg-alt);
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .filter-btn.active, .filter-btn:hover {
-            background: var(--primary);
-            color: white;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .portfolio-item {
-            border-radius: 10px;
-            overflow: hidden;
-            position: relative;
-            height: 250px;
-        }
-
-        .portfolio-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .portfolio-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: var(--transition);
-        }
-     
-        .portfolio-item a {
-            display: block;
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-decoration: none; 
-            color: inherit; 
-    }
-
-
-        .portfolio-item:hover .portfolio-overlay {
-            opacity: 1;
-        }
-
-        .portfolio-item:hover .portfolio-img {
-            transform: scale(1.1);
-        }
-
-        .portfolio-overlay h3 {
-            color: white;
-            margin-bottom: 10px;
-        }
-
-        .portfolio-overlay p {
-            color: #ddd;
-            text-align: center;
-            max-width: 80%;
-        }*/
          /* Portfolio Section */
         .portfolio-filters {
             display: flex;
@@ -1058,6 +912,77 @@
             transform: translateY(-5px);
             box-shadow: 0 15px 30px var(--shadow);
         }
+/* Base styles */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sitelogo {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hamburger / toggle button (hidden by default) */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.nav-toggle .bar {
+  height: 3px;
+  width: 25px;
+  background-color: currentColor;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px; /* adjust based on header height */
+    left: 0;
+    right: 0;
+    background: white; /* or your site background */
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease-in-out;
+    visibility: hidden;
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  /* Hide nav-links by default on small screens */
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+}
 
    /* ==================== */
         /* RESPONSIVE DESIGN */
