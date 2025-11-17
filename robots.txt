@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /#about
+Allow: /#services
+Allow: /#skills
+Allow: /#portfolio
+Allow: /#contact
+
+Sitemap: https://blandinetech.netlify.app/sitemap.xml
