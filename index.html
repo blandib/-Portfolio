@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlandineTech | Freelance Web Developer | Python, C# & JavaScript</title>
-    <meta name="description" content="Freelance Web Developer specializing in Python C#, JavaScript, Node.js, and database solutions. Bilingual English/French developer available for remote projects.">
-    <meta name="keywords" content="freelance developer, Web developer,Python developer, C# developer, JavaScript developer, Node.js, MySQL, PostgreSQL, MongoDB, full-stack developer, remote developer">
+    <!-- Update your meta tags -->
+    <meta name="description" content="Freelance Web Developer  React.js, Python, C#, JavaScript, Node.js, and database solutions. Bilingual English/French developer available for remote projects.">
+    <meta name="keywords" content="freelance developer, Web developer, React developer, Python developer, C# developer, JavaScript developer, Node.js, MySQL, PostgreSQL, MongoDB, full-stack developer, remote developer">
     <meta name="author" content="Blandine Bukasa">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="vVhpk8pRXhBhSfI5ogHZraF4YSPkTWuduZyi95m7LfY" />
@@ -54,12 +55,14 @@
         <span class="bar"></span>
       </div>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Work</a></li>
-        <li><a href="#contact">Hire Me</a></li>
-      </ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#resume">Resume</a></li> <!-- Added -->
+    <li><a href="#portfolio">Work</a></li>
+    <li><a href="#location">Location</a></li> <!-- Added -->
+    <li><a href="#contact">Hire Me</a></li>
+</ul>
       <div class="theme-toggle" id="theme-toggle">
         <i class="fas fa-moon"></i>
       </div>
@@ -89,11 +92,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M400,300 C400,400 300,400 300,300 C300,200 400,200 400,300 Z" fill="var(--primary)" opacity="0.2"/>
-                        <path d="M300,200 C200,200 200,300 300,300 C400,300 400,200 300,200 Z" fill="var(--secondary)" opacity="0.2"/>
-                        <path d="M300,300 C300,400 200,400 200,300 C200,200 300,200 300,300 Z" fill="var(--accent)" opacity="0.2"/>
-                    </svg>
+                    <img src="images/blandine.jpg" alt="Blandine Bukasa">
                 </div>
             </div>
         </div>
@@ -190,8 +189,15 @@
                     <h3>Bilingual Development</h3>
                     <p>Multilingual application development and localization services.</p>
                 </div>
+                <!-- Add this service card to your services section -->
+<div class="service card">
+    <i class="fab fa-react"></i>
+    <h3>React Development</h3>
+    <p>Modern React applications with hooks, context API, and state management solutions.</p>
+</div>
             </div>
         </div>
+        
     </section>
 
     <!-- Skills Section -->
@@ -303,7 +309,37 @@
                         </div>
                     </div>
                 </div>
-
+                 <!-- Add this to your skills section after the Backend Technologies category -->
+<div class="skill-category card">
+    <h3><i class="fab fa-react"></i> Frontend Technologies</h3>
+    <div class="skill-item">
+        <div class="skill-header">
+            <span>React.js</span>
+            <span>83%</span>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-progress" data-width="83%"></div>
+        </div>
+    </div>
+    <div class="skill-item">
+        <div class="skill-header">
+            <span>Next.js</span>
+            <span>78%</span>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-progress" data-width="78%"></div>
+        </div>
+    </div>
+    <div class="skill-item">
+        <div class="skill-header">
+            <span>Redux</span>
+            <span>75%</span>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-progress" data-width="75%"></div>
+        </div>
+    </div>
+</div>
                 <div class="skill-category card">
                     <h3><i class="fas fa-tools"></i> Development Tools</h3>
                     <div class="skill-item">
@@ -363,7 +399,7 @@
         </div>
     </section>
 
-     <!-- Portfolio Section -->
+    
      <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
         <div class="container">
@@ -435,7 +471,235 @@
             </div>
         </div>
     </section>
+   <!-- Resume Download Section -->
+<section id="resume" style="background-color: var(--bg-alt);">
+    <div class="container">
+        <div class="section-title">
+            <h2>My Resume</h2>
+            <p>Download my complete resume and professional profile</p>
+        </div>
+        <div class="resume-container">
+            <div class="resume-content card">
+                <div class="resume-info">
+                    <h3>Professional Profile</h3>
+                    <div class="resume-details">
+                        <!-- Professional Summary -->
+                        <div class="resume-item">
+                            <i class="fas fa-user-tie"></i>
+                            <div>
+                                <h4>Professional Summary</h4>
+                                <p>Full-stack developer with hands-on experience in Node.js, MongoDB, and responsive front-end design. Passionate about building practical tools that empower real-world teams.</p>
+                                <p>Open to remote or hybrid roles in tech support, web development, and administrative systems.</p>
+                            </div>
+                        </div>
 
+                        <!-- Education -->
+                        <div class="resume-item">
+                            <i class="fas fa-user-graduate"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p><strong>Web Computer Programming Certificate</strong></p>
+                                <p>Brigham Young University – Idaho | 2025</p>
+                                <ul class="resume-list">
+                                    <li>Learned software design principles and problem-solving techniques</li>
+                                    <li>Converted software requirements into functional code</li>
+                                    <li>Strengthened communication and teamwork through collaborative projects</li>
+                                </ul>
+
+                                <p><strong>Web Development Certificate</strong></p>
+                                <p>Brigham Young University – Idaho | Expected 2025</p>
+                                <ul class="resume-list">
+                                    <li>Mastered frontend development with HTML, CSS, JavaScript, and modern frameworks</li>
+                                    <li>Built dynamic applications with backend programming and secure APIs</li>
+                                    <li>Studied SQL and relational database design</li>
+                                    <li>Explored RESTful APIs, authentication, and scalable architecture</li>
+                                    <li>Completed full-stack projects and peer code reviews</li>
+                                </ul>
+
+                                <p><strong>PathwayConnect Certificate</strong></p>
+                                <p>BYU – Pathway Worldwide | 2022</p>
+                                <ul class="resume-list">
+                                    <li>Improved English proficiency (written and spoken)</li>
+                                    <li>Developed leadership, time management, and decision-making skills</li>
+                                    <li>Strengthened mathematical abilities</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Technical Skills -->
+                        <div class="resume-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Technical Skills</h4>
+                                <div class="skills-grid">
+                                    <div class="skill-category">
+                                        <h5>Programming Languages</h5>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">Python</span>
+                                            <span class="skill-tag">C#</span>
+                                            <span class="skill-tag">JavaScript (ES6+)</span>
+                                            <span class="skill-tag">HTML5</span>
+                                            <span class="skill-tag">CSS3</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-category">
+                                        <h5>Frameworks & Technologies</h5>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">Node.js</span>
+                                            <span class="skill-tag">Express.js</span>
+                                            <span class="skill-tag">React</span>
+                                            <span class="skill-tag">Next.js</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-category">
+                                        <h5>Databases & Tools</h5>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">MySQL</span>
+                                            <span class="skill-tag">MongoDB</span>
+                                            <span class="skill-tag">Git</span>
+                                            <span class="skill-tag">GitHub</span>
+                                            <span class="skill-tag">Microsoft Office</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-category">
+                                        <h5>Languages & Soft Skills</h5>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">English (Fluent)</span>
+                                            <span class="skill-tag">French (Fluent)</span>
+                                            <span class="skill-tag">Digital Proficiency</span>
+                                            <span class="skill-tag">Integrity-Driven</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience -->
+                        <div class="resume-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h4>Experience</h4>
+                                <p><strong>Freelance Web Developer</strong></p>
+                                <p>Johannesburg, South Africa | Present</p>
+                                <ul class="resume-list">
+                                    <li><strong>Security Duty Scheduler:</strong> Designed responsive dashboard with sidebar navigation, modular folder structure, and authentication scaffolding. Built backend routes using Node.js and Express; integrated MongoDB for data persistence.</li>
+                                    <li><strong>Creative Coding:</strong> Built interactive layouts and visual effects using HTML, CSS, and JavaScript. Explored animation techniques, hover interactions, and component-based design.</li>
+                                    <li><strong>Technical Communication:</strong> Drafted and refined professional messages, proposals, and documentation for team and church contacts. Demonstrated clarity, empathy, and precision.</li>
+                                    <li><strong>Platform Integration:</strong> Added branded footers and social links to GitHub, LinkedIn, and CodePen. Troubleshot save issues on Roadmap.sh and daily.dev.</li>
+                                    <li><strong>Version Control & Collaboration:</strong> Used GitHub for code management and issue tracking. Engaged with developer communities on LinkedIn.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="resume-download">
+                    <div class="download-card">
+                        <i class="fas fa-file-pdf"></i>
+                        <h4>Download Resume</h4>
+                        <p>Get my complete professional profile in PDF format</p>
+                        <a href="Blandine Bukasa_resume (3).pdf" download="Blandine-Bukasa-Resume.pdf" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                        <div class="file-info">
+                            <small>PDF • Updated recently</small>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Contact -->
+                    <div class="contact-quick">
+                        <h5>Quick Connect</h5>
+                        <div class="contact-links">
+                            <a href="mailto:BlandineTech@outlook.com" class="contact-link">
+                                <i class="fas fa-envelope"></i> Email Me
+                            </a>
+                            <a href="www.linkedin.com/in/blandine-bukasa-b7349b10a" class="contact-link">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/blandib" class="contact-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Weather & Location Section -->
+<section id="location">
+    <div class="container">
+        <div class="section-title">
+            <h2>Location & Availability</h2>
+            <p>Remote developer available worldwide with current timezone information</p>
+        </div>
+        <div class="location-container">
+            <!-- Weather Widget -->
+            <div class="weather-widget card">
+                <h3><i class="fas fa-cloud-sun"></i> Current Weather</h3>
+                <div class="weather-content">
+                    <div class="weather-icon">
+                        <i class="fas fa-sun" id="weather-icon"></i>
+                    </div>
+                    <div class="weather-info">
+                        <div class="temperature">
+                            <span id="temp">--</span>°C
+                        </div>
+                        <div class="weather-desc" id="weather-desc">Loading...</div>
+                        <div class="location" id="weather-location">Remote Location</div>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <div class="weather-item">
+                        <span>Humidity:</span>
+                        <span id="humidity">--%</span>
+                    </div>
+                    <div class="weather-item">
+                        <span>Wind:</span>
+                        <span id="wind">-- km/h</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map & Time Widget -->
+            <div class="map-time-widget card">
+                <h3><i class="fas fa-globe-americas"></i> My Location & Time</h3>
+                <div class="time-display">
+                    <div class="current-time">
+                        <span id="current-time">--:--:--</span>
+                    </div>
+                    <div class="current-date">
+                        <span id="current-date">Loading...</span>
+                    </div>
+                    <div class="timezone">
+                        <i class="fas fa-clock"></i>
+                        <span id="timezone">GMT+2 (SAST)</span>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <!-- Simple map placeholder or embed -->
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Available for Remote Work Worldwide</p>
+                        <small>Based in South Africa • Working with International Clients</small>
+                    </div>
+                    
+                    
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.260715589321!2d28.047225315029247!3d-26.193883983445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1b6c5d26c1%3A0x5a1a5e0c0c0c0c0!2sJohannesburg!5e0!3m2!1sen!2sza!4v1620000000000!5m2!1sen!2sza" 
+                        width="100%" 
+                        height="200" 
+                        style="border:0; border-radius: 8px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
@@ -592,6 +856,7 @@
                     <h3>Contact Info</h3>
                     <ul>
                         <li><i class="fas fa-envelope"></i>BlandineTech@outlook.com</li>
+                         <li><i class="fas fa-envelope"></i>Blandinebukasa118@gmail.com</li>
                         <li><i class="fas fa-map-marker-alt"></i> Remote Freelancer</li>
                         <li><i class="fas fa-clock"></i> Available for Projects</li>
                     </ul>
@@ -604,5 +869,6 @@
     </footer>
     <script src="script/script.js"></script>
    <script src="script/message.js"></script>
+   <script src="script/weather.js"></script>
 </body>
 </html>
