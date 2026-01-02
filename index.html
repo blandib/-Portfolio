@@ -45,7 +45,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <script type="application/ld+json">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -54,21 +54,22 @@
   "image": "https://blandinetech.netlify.app/images/blandine.jpg",
   "description": "Freelance Full-Stack Developer specializing in Python, C#, JavaScript, and database solutions",
   "jobTitle": "Freelance Full-Stack Developer",
-  "alumniOf": "Brigham Young University-Idaho",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Brigham Young University-Idaho"
+  },
   "knowsAbout": ["Python", "C#", "JavaScript", "React", "Node.js", "MySQL", "MongoDB", "Web Development"],
   "knowsLanguage": ["English", "French"],
   "availableForHire": true,
   "worksFor": {
     "@type": "Organization",
-    "name": "BlandineTech"
-  },
-  "sameAs": [
-    "https://github.com/blandib",
-    "https://linkedin.com/in/blandine-bukasa-b7349b10a",
-    "https://codepen.io/blandib"
-  ]
+    "name": "BlandineTech",
+    "url": "https://blandinetech.netlify.app",
+    "logo": "https://blandinetech.netlify.app/favicon-96x96.png"
+  }
 }
 </script>
+
 </head>
 <body>
    <!-- Header & Navigation -->
